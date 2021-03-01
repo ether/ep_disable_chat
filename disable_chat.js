@@ -1,6 +1,6 @@
 'use strict';
 
-exports.eejsBlock_styles  = (hookName, context, cb) => {
+exports.eejsBlock_styles = (hookName, context, cb) => {
   context.content += `<style>
     .hide-for-mobile { display:none !important; }
     #chaticon, #chatbox { display: none !important; }
