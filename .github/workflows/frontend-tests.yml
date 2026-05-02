@@ -69,4 +69,11 @@ jobs:
           done
           cd src
           pnpm exec playwright install chromium --with-deps
-          pnpm run test-ui --project=chromium
+          # Use the declared-disables helper instead of plain test-ui:
+          # this plugin's ep.json declares `disables: ["@feature:chat"]`,
+          # so the helper runs two passes — regression (everything not
+          # tagged @feature:chat must pass) + honesty (every test
+          # tagged @feature:chat must FAIL because the plugin really
+          # does disable chat). Both must succeed for CI to be green.
+          # See ether/etherpad-lite#7648 / doc/PLUGIN_FEATURE_DISABLES.md.
+          ../bin/run-frontend-tests-with-disables.sh -- --project=chromium
