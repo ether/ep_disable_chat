@@ -15,9 +15,6 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: ether/etherpad-lite
-          # TEMPORARY: ride the feature-tags branch until ether/etherpad-lite#7648
-          # lands on develop. Drop the `ref` once that merges.
-          ref: feat/feature-tags-disables-contract
           path: etherpad-lite
       - uses: actions/setup-node@v4
         name: Install Node.js
