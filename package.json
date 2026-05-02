@@ -9,7 +9,7 @@
   "deprecated": false,
   "description": "Disable Chat in Etherpad",
   "name": "ep_disable_chat",
-  "version": "0.0.39",
+  "version": "0.0.40",
   "funding": {
     "type": "individual",
     "url": "https://etherpad.org/"
