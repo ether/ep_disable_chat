@@ -29,5 +29,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ether/ep_disable_chat"
+  },
+  "dependencies": {
+    "ep_plugin_helpers": "^0.5.0"
   }
 }
