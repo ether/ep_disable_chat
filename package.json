@@ -31,6 +31,6 @@
     "url": "https://github.com/ether/ep_disable_chat"
   },
   "dependencies": {
-    "ep_plugin_helpers": "^0.5.0"
+    "ep_plugin_helpers": "^0.6.2"
   }
 }
